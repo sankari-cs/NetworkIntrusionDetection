@@ -1,0 +1,42 @@
+{
+  "port_scan": {
+    "enabled": true,
+    "window_seconds": 10,
+    "distinct_ports_threshold": 10,
+    "severity": "HIGH"
+  },
+  "repeated_connections": {
+    "enabled": true,
+    "window_seconds": 10,
+    "connection_threshold": 15,
+    "severity": "MEDIUM"
+  },
+  "dos_activity": {
+    "enabled": true,
+    "window_seconds": 3,
+    "packets_in_window_threshold": 150,
+    "severity": "HIGH"
+  },
+  "suspicious_ports": {
+    "enabled": true,
+    "severity": "LOW",
+    "ports": [21, 23, 25, 135, 139, 445, 1433, 3306, 3389, 5900],
+    "port_names": {
+      "21": "ftp",
+      "23": "telnet",
+      "25": "smtp",
+      "135": "msrpc",
+      "139": "netbios-ssn",
+      "445": "smb",
+      "1433": "mssql",
+      "3306": "mysql",
+      "3389": "rdp",
+      "5900": "vnc"
+    }
+  },
+  "null_scan": {
+    "enabled": true,
+    "severity": "HIGH"
+  },
+  "cooldown_seconds": 30
+}
