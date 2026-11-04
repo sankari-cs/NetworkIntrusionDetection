@@ -58,10 +58,9 @@ The system implements five independent rule-based detection mechanisms.
 
 Examples include:
 
-- **23** â€“ Telnet
-- **445** â€“ SMB
-- **3389** â€“ Remote Desktop Protocol (RDP)
-
+- **23** - Telnet
+- **445** - SMB
+- **3389** - Remote Desktop Protocol (RDP)
 The complete suspicious-port list and detection thresholds are configurable.
 
 **Configuration file:** `rules/detection_rules.json`
